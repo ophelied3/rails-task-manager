@@ -1,5 +1,4 @@
 class TasksController < ApplicationController
-  attr_reader :done
   before_action :find_task, only: [:show, :edit, :update, :destroy]
 
   def index
