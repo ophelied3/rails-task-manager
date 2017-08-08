@@ -1,0 +1,8 @@
+<h1><%= @task.name %></h1>
+
+<ul>
+  <li>Cette tâche a été créée le <%= @task.created_at.strftime("%d/%m/%Y") %>.</li>
+  <li>Elle doit être terminée avant le <%= @task.deadline.strftime("%d/%m/%Y") %>.</li>
+</ul>
+
+<%= link_to "Tasks list", tasks_path %>
